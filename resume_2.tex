@@ -1,0 +1,143 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.3, 10 May 2020) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+\usepackage{paracol}
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+\name{Kyle Kirk}
+\personalinfo{%
+  \email{ktkirk@explodencode.com}
+  \phone{(530) 321-7469}
+  \mailaddress{75 Harvest Park Court, Apt 119}
+  \location{Chico, CA}
+  \homepage{<in progress> explodencode.com}
+  \linkedin{kyle-kirk-90400214}
+  \github{github.com/capktkirk}
+
+}
+
+\makecvheader
+
+\AtBeginEnvironment{itemize}{\small}
+
+\columnratio{0.6}
+
+\begin{paracol}{2}
+
+\cvsection{Experience}
+
+\cvevent{Grader and Teachers Assistant}{Chico State}{January 2019 -- Ongoing}{Chico, CA}
+\begin{itemize}
+\item Grading for a writing intensive course on futurism \& technology.
+\item Grading for a 500 level course in Compiler Design \& Optimization, as well as tutoring and being a teachers assistant.
+\item Grading for a 100 level course for programming \& algorithms, as well as being a teachers assistant.
+\end{itemize}
+
+\divider
+
+\cvevent{Client Assistant}{We Care A Lot Foundation}{August 2019 -- July 2020}{Chico, CA}
+\begin{itemize}
+\item Driving disabled clients to art and crafts shows so that they could set up their wares, as well as handling the purchasing and inventory management.
+\end{itemize}
+
+\cvevent{Private Tutor}{Self}{Aug 2017 - Ongoing}{Chico, CA}
+\begin{itemize}
+\item Tutoring students in Python, C++, Flutter, Golang as well as general computing philosophies and discrete mathematics.
+\end{itemize}
+
+
+\cvsection{Education}
+
+\cvevent{B.S. \ in Computer Science}{Chico State University}{Sept 2018 -- June 2021}{}
+
+\divider
+
+\cvevent{A.S.\ in Computer Science}{Butte Community College}{January 2016 -- May 2018}{}
+
+\switchcolumn
+
+\cvsection{Life Philosophy}
+\begin{quote}
+``Seven times down, eight times up.''
+\end{quote}
+
+\cvsection{Strengths}
+
+\cvtag{Leadership}
+\cvtag{Debate}
+\cvtag{Organization}\
+\cvtag{Tenacity}
+\cvtag{Patience}
+
+\divider\smallskip
+
+\cvtag{Code Review}
+\cvtag{Command line}
+\cvtag{Scripting} \
+\cvtag{Recursion -> github.com/capktkirk/resume}
+
+\cvsection{Technical Skills}
+
+\cvskill{Python}{4}
+\cvskill{Linux/Bash}{4}
+\cvskill{Golang}{3}
+\cvskill{Git}{3}
+\cvskill{C}{3}
+\cvskill{Flutter}{3}
+\cvskill{AWS/GCP}{2}
+\cvskill{LaTeX}{2}
+
+\cvsection{Other Skills}
+
+\cvskill{Sales}{4}
+\cvskill{Team Coordination}{4}
+
+
+\cvsection{References}
+
+\cvref{Prof. Todd A. Gibson}{Chico State University}{tagibson@csuchico.net}
+\divider
+\cvref{J. Boyd Trolinger}{Butte College}{jboydt@foobt.net}
+\divider
+
+\end{paracol}
+
+\cvsection{Extra Curricular}
+
+\cvevent{Founder and President}{Butte College}{January 2016 -- March 2018}{Chico, CA}
+\begin{itemize}
+\item Created projects and led instruction in Python 3.x for members.
+\item Organized codeathons for projects and team building.
+\item Created documentation for standard coding practices.
+\item Utilized Raspberry Pi 2/3's to create a magic mirror project for Butte College.
+\end{itemize}
+
+\end{document}
