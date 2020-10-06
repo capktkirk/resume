@@ -16,12 +16,8 @@
 
 \geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
 \usepackage{paracol}
-\ifxetexorluatex
-  \setmainfont{Lato}
-\else
-  \usepackage[default]{lato}
-\fi
 
+% Change the colours if you want to
 \definecolor{VividPurple}{HTML}{3E0097}
 \definecolor{SlateGrey}{HTML}{2E2E2E}
 \definecolor{LightGrey}{HTML}{666666}
@@ -34,6 +30,18 @@
 
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
+% Define an environment for cvskill
+% \renewenvironment{cvskills}{%
+%   \vspace{\acvSectionContentTopSkip}
+%   \vspace{-2.0mm}
+%   \begin{center}
+%     \setlength\tabcolsep{1ex}
+%     \setlength{\extrarowheight}{0pt}
+%     \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l L{\textwidth * \real{0.9}}}
+% }{%
+%     \end{tabular*}
+%   \end{center}
+%   }
 
 \begin{document}
 \name{Kyle Kirk}
@@ -80,11 +88,11 @@
 
 \cvsection{Education}
 
-\cvevent{B.S. \ in Computer Science}{Chico State University}{Sept 2018 -- June 2021}{}
+\cvevent{B.S. in Computer Science}{Chico State University}{Sept 2018 -- June 2021}{}
 
 \divider
 
-\cvevent{A.S.\ in Computer Science}{Butte Community College}{January 2016 -- May 2018}{}
+\cvevent{A.S. in Computer Science}{Butte Community College}{January 2016 -- May 2018}{}
 
 \switchcolumn
 
@@ -94,41 +102,55 @@
 \end{quote}
 
 \cvsection{Strengths}
-
+\color{gray}
 \cvtag{Leadership}
-\cvtag{Debate}
-\cvtag{Organization}\
+\cvtag{Organization}
+\cvtag{Research}
+\newline
 \cvtag{Tenacity}
 \cvtag{Patience}
 
 \divider\smallskip
 
 \cvtag{Code Review}
-\cvtag{Command line}
-\cvtag{Scripting} \
-\cvtag{Recursion -> github.com/capktkirk/resume}
+\cvtag{CLI}
+\cvtag{Scripting}
+\newline
+\cvtag{Recursion-github.com/capktkirk/resume}
 
 \cvsection{Technical Skills}
-
-\cvskill{C++}{4}
-\cvskill{Python}{4}
-\cvskill{Linux/Bash}{4}
-\cvskill{Golang}{3}
-\cvskill{Git}{3}
-\cvskill{C}{3}
-\cvskill{Flutter}{3}
-\cvskill{AWS/GCP}{2}
-\cvskill{LaTeX}{2}
-
+    \color{black}
+    \textbf{Programming Languages: }
+        \newline
+        \cvtag{C++}
+        \cvtag{C}
+        \cvtag{Python}
+        \cvtag{Flutter} 
+        \cvtag{Golang} 
+        \cvtag{Bash} 
+        \cvtag{LaTeX}
+        \newline
+    \textbf{Database/Platforms:}
+        \newline
+        \cvtag{MySQL} 
+        \cvtag{MongoDB} 
+        \cvtag{AWS}
+        \cvtag{Linux}
+        \newline
+        \cvtag{Google Cloud Compute}
+        \cvtag{GIT}
+        \cvtag{Docker}
+        \newline
 \cvsection{Other Skills}
-
-\cvskill{Sales}{4}
-\cvskill{Team Coordination}{4}
-
+    \cvtag{Sales}
+    \cvtag{Team Coordination}
+    \newline
+    \cvtag{Documentation}
+    \cvtag{Debugging}
 
 \cvsection{References}
 
-\cvref{Prof. Todd A. Gibson}{Institute}{tagibson@csuchico.net}
+\cvref{Prof. Todd A. Gibson}{Chico State University}{tagibson@csuchico.net}
 \divider
 \cvref{J. Boyd Trolinger}{Butte College}{jboydt@foobt.net}
 \divider
@@ -143,6 +165,6 @@
 \item Organized codeathons for projects and team building.
 \item Created documentation for standard coding practices.
 \item Utilized Raspberry Pi 2/3's to create a magic mirror project for Butte College.
-\ed{itemize}
+\end{itemize}
 
 \end{document}
