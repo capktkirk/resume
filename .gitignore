@@ -1,0 +1,8 @@
+# All Side Files
+/auto
+*.xmpi
+*.aux
+*.out
+*.log
+*.xml
+*.bcf

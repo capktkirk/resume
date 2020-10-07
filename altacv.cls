@@ -262,7 +262,7 @@
 \newcommand{\namefont}{\Huge\bfseries}
 \newcommand{\taglinefont}{\large\bfseries}
 \newcommand{\personalinfofont}{\footnotesize\bfseries}
-\newcommand{\cvsectionfont}\LARGE\bfseries}
+\newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
 
 \newcommand{\makecvheader}{%
@@ -414,4 +414,3 @@
   \color{body}
   \raggedright
 }
-{
